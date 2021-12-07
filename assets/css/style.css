@@ -1,0 +1,201 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+/* svg-inline--fa */
+/* GLOBALS */
+body {
+  font-family: "Trip Sans";
+  font-size: 16px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* TITLES */
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans Bold";
+  font-weight: bold;
+  margin: 50px 0 30px 0;
+}
+/* HEADER */
+.logo {
+  width: 190px;
+}
+.header-nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav nav div {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.header-nav nav button {
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+}
+.header-nav nav div .svg-inline--fa {
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* MAIN */
+h1 > span {
+  color: #fb5d5d;
+}
+.preview nav {
+  display: flex;
+}
+.preview nav div {
+  font-family: "Trip Sans Bold";
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.preview nav div:not(:last-child) {
+  margin-right: 10px;
+}
+.images {
+  display: flex;
+  height: 400px;
+  margin: 25px 0;
+}
+.col-left {
+  flex: 1;
+  margin-right: 2px;
+}
+.col-left img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.col-right {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.col-right img {
+  width: 500px;
+  height: calc(50% - 1px);
+  object-fit: cover;
+  object-position: center;
+}
+.col-right img:first-child {
+  margin-bottom: 2px;
+}
+
+h2 {
+  font-family: "Trip Sans Bold";
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-family: "Trip Sans Bold";
+  font-size: 24px;
+}
+
+section div {
+  height: 290px;
+  width: 1140px;
+}
+#visit {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  width: 220px;
+  height: 80px;
+  margin-top: 20px;
+}
+#sectionBarre {
+  display: flex;
+}
+
+#seDivertir {
+  width: 250px;
+  height: 270px;
+}
+
+#seDivertir p {
+  margin: 20px 0 20px 0;
+}
+#photoVisit {
+  width: 850px;
+  height: 350px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+#photoVisit img {
+  height: 204px;
+  width: 274px;
+  margin-right: 20px;
+}
+
+#photoVisit li {
+  font-family: "Trip Sans Bold";
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  top: -22px;
+}
+
+#photoVisit li a {
+  text-decoration: none;
+  color: black;
+}
+
+li .fa-heart {
+  font-size: 22px;
+  position: relative;
+  top: 50px;
+  left: 225px;
+  z-index: 1002;
+  border: solid 10px white;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.barreAvis {
+  display: flex;
+  font-size: 12px;
+  position: relative;
+  top: 249px;
+  right: 294px;
+  z-index: 1003;
+  color: #00aa6c;
+  width: 274px;
+  margin-left: 1px;
+}
+.barreAvis span {
+  color: black;
+  margin-left: 10px;
+  font-family: "Trip Sans";
+  font-size: 12px;
+}
+.comment {
+  display: flex;
+  position: relative;
+  font-family: "Trip Sans";
+  font-size: 14px;
+  top: 15px;
+  right: 100px;
+  flex-direction: row;
+  color: black;
+  width: 230px;
+}
