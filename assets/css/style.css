@@ -164,7 +164,7 @@ li .fa-heart {
   font-size: 22px;
   position: relative;
   top: 50px;
-  left: 225px;
+  left: 200px;
   z-index: 1002;
   border: solid 10px white;
   background-color: white;
@@ -175,8 +175,7 @@ li .fa-heart {
   display: flex;
   font-size: 12px;
   position: relative;
-  top: 249px;
-  right: 294px;
+
   z-index: 1003;
   color: #00aa6c;
   width: 274px;
