@@ -38,12 +38,14 @@
             <div><span>Hotels</span><i class="fas fa-procedures"></i></div>
             <div>
               <span>Locations de vacances</span
-              ><i class="fas fa-procedures"></i>
+              ><i class="fas fa-key"></i>
             </div>
-            <div><span>Hotels</span><i class="fas fa-procedures"></i></div>
-            <div><span>Hotels</span><i class="fas fa-procedures"></i></div>
-            <div><span>Hotels</span><i class="fas fa-procedures"></i></div>
-            <div><span>Hotels</span><i class="fas fa-procedures"></i></div>
+            <div><span>Activités</span><i class="fas fa-map-signs"></i></div>
+            <div><span>Restaurant</span><i class="fas fa-utensils"></i>
+            </div>
+            <div><span>Forum de voyage</span><i class="far fa-comment-dots"></i>
+            </i></div>
+            <div><span>Plus</span><i class="fas fa-ellipsis-h"></i></div>
           </nav>
         </div>
 
@@ -61,18 +63,38 @@
               src="./assets/images/caption-2.jpeg"
               alt="image descriptive de Paris"
             />
+
             <img
               src="./assets/images/caption-3.jpeg"
               alt="image descriptive de Paris"
             />
           </div>
         </div>
+        <div class="baseline">
+          <div>
+            <span>Europe</span><span>></span><span>France</span><span>></span
+            ><span>Ile-de-France</span><span>></span><span>Paris</span
+            ><span><i class="fas fa-sort-down"></i></span>
+          </div>
+          <p>Visiter : Paris</p>
+        </div>
 
-        <!-- section -->
-        <section>
-          <h2>Paris: les immanquables</h2>
-          <div id="sectionBarre">
-            <div id="seDivertir">
+        <section class="introduction">
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </section>
+        <section class="immanquables">
+          <h2>Paris : les immanquables</h2>
+          <div class="caroussel-section">
+            <div class="col-1">
               <h3>Se divertir</h3>
               <p>
                 Des lieux à voir, des rues à explorer et des expériences
@@ -81,212 +103,158 @@
               <a href="#">Tout afficher</a>
             </div>
 
-            <div id="photoVisit">
-              <div>
-                <ul>
-                  <li>
-                    <i class="far fa-heart"></i>
+            <!-- tour eiffel -->
+            <div class="col-2">
+              <div class="caroussel-element">
+                <img src="./assets/images/eiffeltoren.jpg" alt="Tour Eiffel" />
 
-                    <img
-                      src="./assets/images/eiffeltoren.jpg"
-                      alt="Tour Eiffel"
-                    />
-                    <a href="#">Tour Eiffel</a>
-                  </li>
-                </ul>
+                <div class="heart"><i class="far fa-heart"></i></div>
 
-                <div class="barreAvis">
+                <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Tour Eiffel</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Eglises et cathédrales</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img src="./assets/images/louvre.jpg" alt="Musée du louvre" />
 
-                  <a href="#">Musée du louvre </a>
-                </li>
-                <div class="barreAvis">
+              <!-- louvre -->
+              <div class="caroussel-element">
+                <img src="./assets/images/louvre.jpg" alt="Musée du louvre" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Musée du louvre</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Bâtiment architecturaux, Musée d'art</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
-                    src="./assets/images/arc-de-triomphe-at-night.jpg"
-                    alt="Arc de triomphe"
-                  /><a href="#">Arc de triomphe </a>
-                </li>
-                <div class="barreAvis">
+
+              <!-- arc de triomphe -->
+              <div class="caroussel-element">
+                <img
+                  src="./assets/images/arc-de-triomphe-at-night.jpg"
+                  alt="Arc de triomphe"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Arc de triomphe</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Bâtiment architecturaux, Sites historiques</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
+
+
+
+              <!-- rodin -->
+              <div class="caroussel-element">
+                <img
                     src="./assets/images/vue-de-la-cour-d-honneur.jpg"
                     alt=" Musée Rodin"
-                  /><a href="#">Musée Rodin </a>
-                </li>
+                  />
+                  <div class="heart"><i class="far fa-heart"></i></div>
+                  <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                  <h4>Musée Rodin</h4>
+                <div class="rating">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
+                </div>
+                <p>musée spécialisés</p>
+              </div>
 
-                <div class="barreAvis">
+
+              <!-- shakespeare -->
+              <div class="caroussel-element">
+                <img
+                src="./assets/images/the-bookstore.jpg"
+                alt="Librairie Shakespeare"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+              <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Librairie Shakespeare/h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Bibliothèques, Grands magasins</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
-                    src="./assets/images/notre dame.jpg"
-                    alt="Notre Dame de Paris"
-                  /><a href="#">Notre Dame de Paris </a>
-                </li>
-                <div class="barreAvis">
+
+
+             <!-- orsay -->
+              <div class="caroussel-element">
+                <img
+                src="./assets/images/musée d'orsay.jpg"
+                alt="Musée d'Orsay"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+              <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>  
+              <h4>Musée d'Orsay</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Musée d'art</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
-                    src="./assets/images/the-bookstore.jpg"
-                    alt="Librairie Shakespeare"
-                  /><a href="#">Librairie Shakespeare </a>
-                </li>
-                <div class="barreAvis">
+
+              <!-- puces st ouen -->
+              <div class="caroussel-element">
+                <img
+                src="./assets/images/marche-vernaison-maison.jpg"
+                alt="Marché aux Puces de Saint Ouen"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+              <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>  
+              <h4>Marché aux Puces de Saint Ouen</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Antiquaires, Marchés aux puces & Marchés de rue</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
-                    src="./assets/images/musée d'orsay.jpg"
-                    alt="Musée d'Orsay"
-                  /><a href="#">Musée d'Orsay </a>
-                </li>
-                <div class="barreAvis">
-                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
-                </div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
-                    src="./assets/images/marche-vernaison-maison.jpg"
-                    alt="Marché aux Puces de Saint Ouen"
-                  /><a href="#">Marché aux Puces de Saint Ouen </a>
-                </li>
-                <div class="barreAvis">
-                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
-                </div>
-              </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
+
+               <!-- sacré coeur -->
+              <div class="caroussel-element">
+                <img
                     src="./assets/images/basilica-del-sagrado.jpg"
                     alt="Basilique du sacré coeur"
-                  /><a href="#">Basilique du sacré coeur </a>
-                </li>
-                <div class="barreAvis">
+                  />
+                  <div class="heart"><i class="far fa-heart"></i></div>
+                  <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Basilique du sacré coeur</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Eglises et cathédrales</p>
               </div>
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <img
+              
+              <!-- jardin des tuilerie -->
+              <div class="caroussel-element">
+                <img
                     src="./assets/images/jardin-des-tuileries.jpg"
                     alt="Jardin des tuileries"
-                  /><a href="#">Jardin des tuileries </a>
-                </li>
-                <div class="barreAvis">
-                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
-                </div>
-              </div>
-
-              <!-- test -->
-
-              <div>
-                <li>
-                  <i class="far fa-heart"></i>
-
-                  <img
-                    src="./assets/images/eiffeltoren.jpg"
-                    alt="Tour Eiffel"
                   />
-                  <a href="#">Tour Eiffel</a>
-                </li>
-                <div class="barreAvis">
+                  <div class="heart"><i class="far fa-heart"></i></div>
+                  <div class="laureat"> <img src="./assets/images/laureat2021.PNG" alt="laureat 2021"></div>
+                <h4>Jardin des tuileries</h4>
+                <div class="rating">
                   <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                   ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
-                  ><i class="fas fa-adjust"></i> <span>11200</span>
-                  <p class="comment">
-                    Tours et plateformes d'observation, Monuments & Points
-                    d'interêt
-                  </p>
+                  ><i class="fas fa-adjust"></i><span>11&nbsp200</span>
                 </div>
+                <p>Tours et plateformes d'observation Monuments & Points d'interêt</p>
               </div>
             </div>
           </div>

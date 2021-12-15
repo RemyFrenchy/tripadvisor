@@ -9,6 +9,9 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+section {
+  margin-bottom: 60px;
+}
 /* TITLES */
 h1 {
   font-size: 54px;
@@ -16,12 +19,30 @@ h1 {
   font-weight: bold;
   margin: 50px 0 30px 0;
 }
+h2 {
+  font-size: 28px;
+  margin: 40px 0 30px 0;
+  font-family: "Trip Sans Bold";
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-family: "Trip Sans Bold";
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 18px;
+  font-family: "Trip Sans Bold";
+  margin: 5px 0;
+}
 /* HEADER */
+header {
+  height: 60px;
+}
 .logo {
   width: 190px;
 }
 .header-nav {
-  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,102 +120,127 @@ h1 > span {
 .col-right img:first-child {
   margin-bottom: 2px;
 }
+/* Baseline */
+.baseline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #333333;
+  line-height: 14px;
+}
+.baseline span {
+  margin-right: 5px;
+}
+.baseline div {
+  display: flex;
+  align-items: center;
+}
+.baseline .svg-inline--fa {
+  vertical-align: top;
+}
+.baseline div span:nth-child(odd):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-h2 {
-  font-family: "Trip Sans Bold";
-  font-size: 28px;
-  margin-bottom: 20px;
+/* INTRODUCTION */
+.introduction p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: lighter;
 }
-h3 {
-  font-family: "Trip Sans Bold";
-  font-size: 24px;
+.introduction {
+  width: 50%;
 }
-
-section div {
-  height: 290px;
-  width: 1140px;
-}
-#visit {
+/* IMMANQUABLES */
+.immanquables .col-1 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  width: 220px;
-  height: 80px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
-#sectionBarre {
+.caroussel-section {
   display: flex;
 }
-
-#seDivertir {
-  width: 250px;
-  height: 270px;
+.col-1 {
+  flex: 1;
+  /* height: 400px; */
+  padding-right: 40px;
+  /* background-color: darkgoldenrod; */
 }
-
-#seDivertir p {
-  margin: 20px 0 20px 0;
-}
-#photoVisit {
-  width: 850px;
-  height: 350px;
-  display: flex;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
-#photoVisit img {
-  height: 204px;
-  width: 274px;
-  margin-right: 20px;
-}
-
-#photoVisit li {
-  font-family: "Trip Sans Bold";
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-  top: -22px;
-}
-
-#photoVisit li a {
-  text-decoration: none;
+.col-1 a,
+.col-1 a:visited {
   color: black;
+  font-size: 16px;
 }
-
-li .fa-heart {
-  font-size: 22px;
+.col-2 {
+  flex: 3;
+  /* height: 400px; */
+  /* background-color: darkmagenta; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.col-2::-webkit-scrollbar {
+  display: none;
+}
+.col-2 div:not(:last-child) {
+  margin-right: 12px;
+}
+.caroussel-element {
   position: relative;
-  top: 50px;
-  left: 200px;
-  z-index: 1002;
-  border: solid 10px white;
+}
+.caroussel-element:hover h4 {
+  text-decoration: underline;
+}
+.caroussel-element:hover img {
+  opacity: 0.6;
+}
+.caroussel-element img {
+  width: 264px;
+  height: 200px;
+  object-fit: cover;
+}
+.caroussel-element p {
+  font-size: 14px;
+  color: #333333;
+}
+.rating {
+  margin-bottom: 5px;
+}
+.rating .svg-inline--fa {
+  color: #21aa6c;
+  font-size: 12px;
+}
+.rating span {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #333333;
+}
+.heart {
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: -11px;
+}
+.heart .svg-inline--fa {
+  font-size: 18px;
 }
 
-.barreAvis {
-  display: flex;
-  font-size: 12px;
-  position: relative;
-
-  z-index: 1003;
-  color: #00aa6c;
-  width: 274px;
-  margin-left: 1px;
-}
-.barreAvis span {
-  color: black;
-  margin-left: 10px;
-  font-family: "Trip Sans";
-  font-size: 12px;
-}
-.comment {
-  display: flex;
-  position: relative;
-  font-family: "Trip Sans";
-  font-size: 14px;
-  top: 15px;
-  right: 100px;
-  flex-direction: row;
-  color: black;
-  width: 230px;
+.laureat img {
+  width: 40px;
+  height: 50px;
+  left: 10px;
+  bottom: 110px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
