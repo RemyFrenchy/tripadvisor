@@ -88,6 +88,8 @@ h1 > span {
   border-radius: 10px;
   justify-content: space-between;
   align-items: flex-start;
+
+  height: 50px;
 }
 .preview nav div:not(:last-child) {
   margin-right: 10px;
@@ -243,4 +245,73 @@ h1 > span {
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+
+@media (max-width: 3000px) {
+  .preview .appear {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 1184px) {
+  body {
+    background-color: red;
+  }
+  .preview .appear {
+    display: flex;
+  }
+
+  .preview nav div {
+    width: 270px;
+    height: 50px;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+
+  .preview nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+  .preview nav div {
+    height: 30px;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+  .preview nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: 1300px;
+  }
+  .preview nav div {
+    height: 20px;
+    width: 180px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .col-right {
+    display: none;
+  }
+  .svg-inline--fas {
+    display: flex;
+    position: relative;
+    top: 10px;
+  }
 }
